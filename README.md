@@ -12,14 +12,19 @@ Replace YOUR_API_KEY with your actual API key in the code.
 The script consists of two main parts:
 
 Downloading Energy Prices: The code fetches day-ahead energy prices for Hungary (country code 10YHU-MAVIR----U) between a specified start_dt and end_dt.
+
 Resampling Data: After downloading the hourly energy prices, the data is resampled to 15-minute intervals by duplicating the hourly values using forward-fill (fill()).
 
 Files Generated:
+
 hungary_energy_prices.csv: Contains the hourly energy prices for the selected time period.
+
 hungary_energy_prices_15min.csv: Contains the 15-minute interval energy prices (duplicated from the hourly values).
 
 Customization:
+
 You can modify the start_dt and end_dt variables to change the time period for which you want to download data.
+
 If you want to change the country or area, replace the country_code in the query method with the appropriate ENTSO-E area code.
 
 
@@ -28,4 +33,5 @@ If you want to change the country or area, replace the country_code in the query
 pandas
 entsoe-py
 To install the necessary libraries, you can use the following command:
+
 pip install pandas entsoe-py
