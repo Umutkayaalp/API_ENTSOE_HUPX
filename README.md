@@ -28,7 +28,8 @@ You can modify the start_dt and end_dt variables to change the time period for w
 If you want to change the country or area, replace the country_code in the query method with the appropriate ENTSO-E area code.
 
 
-# To run the code, you'll need the following Python packages:
+# To run the code
+you'll need the following Python packages:
 
 pandas
 entsoe-py
